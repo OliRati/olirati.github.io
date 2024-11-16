@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0.25em;
+    color: white;
+}
+
+.paragraph {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: lightgray
+}
+
+.paragraph::first-letter {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-right: 0.1em;
+    margin-left: 1em;
+    color: white;
+}
+
+a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: lightblue;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.list {
+    margin-left: 3em;
+}
+
+.listitem {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: gray;
+}
+
+.listitem::before {
+    content: "-";
+    margin-right: 0.25em;
+    color: lightcoral;
+}
