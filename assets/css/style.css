@@ -9,8 +9,8 @@ body {
 }
 
 #background {
-    background-image: url("../img/pexels-agnieszka-taggart-3157904-28343999.jpg");
-    background-position: top left;
+    background-image: url("../img/pexels-agnieszka-taggart-3157904-28343999-lowres.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -20,13 +20,18 @@ body {
 .title {
     font-size: 2em;
     font-weight: 600;
-    margin: 0.25em;
-    color: white;
+    color: beige;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 0;
 }
 
 .paragraph {
     font-size: 1.2em;
     font-weight: 500;
+    margin-bottom: 1em;
     color: lightgray
 }
 
@@ -64,14 +69,19 @@ a:hover {
 
 .listitem {
     font-size: 1.2em;
-    font-weight: 400;
-    color: gray;
+    font-weight: 500;
+    color: lightgray;
+    margin-bottom: 0.5em;
 }
 
 .listitem::before {
-    content: "-";
-    margin-right: 0.25em;
+    position: relative;
+    top: 0.2em;
+    content: "*";
+    font-size: 1.2em;
+    font-weight: 900;
     color: lightcoral;
+    margin-right: 0.25em;
 }
 
 #maintitle {
@@ -85,10 +95,6 @@ a:hover {
     position: relative;
     margin-bottom: 3em;
     top: 2em;
-}
-
-#subtitle {
-    margin: 2em 0;
 }
 
 #githublogo {
