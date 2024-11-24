@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+#background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes space {
+    0% {
+        transform: translate(-25vw, -25vh) rotate(-5deg);
+    }
+
+    50% {
+        transform: translate(-35vw, -25vh) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-25vw, -25vh) rotate(5deg);
+    }
+}
+
+#deepspace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: space 20s alternate infinite;
+    animation-delay: 1.5s;
+}
+
+#deepspace img {
+    width: 150vw;
+    height: 150vh;
+    object-fit: cover;
+}
+
+@keyframes zoomout {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#navigationroom {
+    position: absolute;
+    top: -10vh;
+    left: -10vw;
+    animation: zoomout 2s forwards;
+    animation-delay: 1.5s;
+}
+
+#navigationroom img {
+    width: 120vw;
+    height: 120vh;
+    object-fit: cover;
+}
+
+@keyframes leftdoor {
+    100% {
+        transform: translateX(-40vw);
+    }
+}
+
+@keyframes rightdoor {
+    100% {
+        transform: translateX(40vw);
+    }
+}
+
+@keyframes zoomin {
+    99% {
+        transform: translateY(-120vh) scale(3.0);
+        filter: blur(15px);
+    }
+
+    100% {
+        transform: translateY(-120vh) scale(3.0);
+        filter: blur(0);
+    }
+}
+
+#doorleft,
+#doorright,
+#doormask {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#doorleft {
+    animation: leftdoor 2s forwards;
+    animation-delay: 2s;
+}
+
+#doorright {
+    animation: rightdoor 2s forwards;
+    animation-delay: 2s;
+}
+
+#doorplane {
+    animation: zoomin 3s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes screenoutput {
+    100% {
+        top: 25vh;
+    }
+}
+
+@keyframes screenclose {
+    0% {
+        top: 25vh;
+    }
+    100% {
+        top: calc(100vh + 20px);
+    }
+}
+
+#panel {
+    position: absolute;
+    top: calc(100vh + 20px);
+    left: calc(15vw - 4px);
+    width: 70vw;
+    height: 70vh;
+    background-color: rgba(0, 120, 0, .50);
+    border-radius: 15px;
+    border: 4px solid rgba(0, 200, 0, .80);
+    box-shadow: 0 0 20px rgba(0, 200, 0, .80);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    animation: screenoutput 2s forwards;
+    animation-delay: 3s;
+}
+
+#innerpanel {
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    overflow: hidden;
+}
+
+.neon {
+    color: rgba(70, 255, 70, .80);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'SpaceGrotesk';
+    font-size: 1.5rem;
+}
+
+.neonhr {
+    border: 2px solid rgba(70, 255, 70, .80);
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    
+    100% {
+        stroke-dasharray: 100, 0;
+    }
+}
+
+svg text {
+    font-family: 'SpaceGrotesk';
+    fill: none;
+    stroke: rgb(70, 255, 70);
+    stroke-width: 2;
+    stroke-dasharray: 0, 100;
+    animation: draw 1s linear forwards;
+    animation-delay: 4s;
+}
+
+@keyframes delaydraw {
+    100% {
+        color: rgba(70, 255, 70, 1);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);    
+    }
+}
+
+#innerpanel p {
+    color: rgba(70, 255, 70, 0);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
+    animation: delaydraw 1s linear forwards;
+    animation-delay: 4.5s;
+}
+
+#innerpanel a {
+    font-family: 'SpaceGrotesk';
+    font-size: 2rem;
+    color: rgba(70, 255, 70, 0);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
+    text-decoration: none;
+    animation: delaydraw 1s linear forwards;
+    animation-delay: 5.5s;
+}
+
+#innerpanel a:hover {
+    font-weight: 800;
+}
