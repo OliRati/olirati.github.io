@@ -15,30 +15,39 @@
 
 <body>
     <div id="background">
-        <div id="deepspace">
-            <img src="./assets/img/pexels-agnieszka-taggart-3157904-28343999-lowres.jpg" alt="">
-        </div>
-        <div id="navigationroom">
-            <img src="./assets/img/shuttle_navigatation_room-mask.png" alt="">
-        </div>
-        <div id="doorplane">
-            <img id="doorleft" src="./assets/img/shuttle_sliding_doors-left_door.png" alt="">
-            <img id="doorright" src="./assets/img/shuttle_sliding_doors-right_door.png" alt="">
-            <img id="doormask" src="./assets/img/shuttle_sliding_doors-contour.png" alt="">
-        </div>
-        <div id="panel">
-            <div id="innerpanel">
-                <svg width="500" height="50">
-                    <text x="10" y="40" font-size="30">Loading Navigation system</text>
-                </svg>
-                <hr class="neonhr">
-                <p class="neon">Navigation system Ready.</p>
-                <p class="neon">Welcome new crew member</p>
-                <p class="neon">Enter the dojo to see more.</p>
-                <a onClick="exitAnimation();">Go there.</a>
+        <div id="playing">
+            <div id="deepspace">
+                <img src="./assets/img/pexels-agnieszka-taggart-3157904-28343999-lowres.jpg" alt="">
+            </div>
+            <div id="navigationroom">
+                <img src="./assets/img/shuttle_navigatation_room-mask.png" alt="">
+            </div>
+            <div id="doorplane">
+                <img id="doorleft" src="./assets/img/shuttle_sliding_doors-left_door.png" alt="">
+                <img id="doorright" src="./assets/img/shuttle_sliding_doors-right_door.png" alt="">
+                <img id="doormask" src="./assets/img/shuttle_sliding_doors-contour.png" alt="">
+            </div>
+            <div id="panel">
+                <div id="innerpanel">
+                    <svg width="500" height="50">
+                        <text x="10" y="40" font-size="30">Loading Navigation system</text>
+                    </svg>
+                    <hr class="neonhr">
+                    <p class="neon">Navigation system Ready.</p>
+                    <p class="neon">Welcome new crew member</p>
+                    <p class="neon">Enter the dojo to see more.</p>
+                    <a onClick="exitAnimation();">Go there.</a>
+                </div>
             </div>
         </div>
-    </div>
+        <div id="loading">
+            <div id="innerloading">
+                <div id="progressdiv">
+                    <p class="neon">Loading<span id="progress"></span></p>
+                    <p class="neon">Please wait</p>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

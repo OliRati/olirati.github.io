@@ -19,6 +19,32 @@ body {
     overflow: hidden;
 }
 
+#playing {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+#loading {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#innerloading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#progressdiv {
+    margin: auto;
+}
+
 @keyframes space {
     0% {
         transform: translate(-25vw, -25vh) rotate(-5deg);
