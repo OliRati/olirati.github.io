@@ -23,6 +23,7 @@ body {
     display: none;
     width: 100vw;
     height: 100vh;
+    animation-play-state: paused; 
 }
 
 #loading {
@@ -65,6 +66,7 @@ body {
     left: 0;
     animation: space 20s alternate infinite;
     animation-delay: 1.5s;
+    animation-play-state: inherit; 
 }
 
 #deepspace img {
@@ -89,6 +91,7 @@ body {
     left: -10vw;
     animation: zoomout 2s forwards;
     animation-delay: 1.5s;
+    animation-play-state: inherit; 
 }
 
 #navigationroom img {
@@ -133,16 +136,19 @@ body {
 #doorleft {
     animation: leftdoor 2s forwards;
     animation-delay: 2s;
+    animation-play-state: inherit; 
 }
 
 #doorright {
     animation: rightdoor 2s forwards;
     animation-delay: 2s;
+    animation-play-state: inherit; 
 }
 
 #doorplane {
     animation: zoomin 3s forwards;
     animation-delay: 2s;
+    animation-play-state: inherit; 
 }
 
 @keyframes screenoutput {
@@ -174,6 +180,7 @@ body {
     backdrop-filter: blur(10px);
     animation: screenoutput 2s forwards;
     animation-delay: 3s;
+    animation-play-state: inherit; 
 }
 
 #innerpanel {
@@ -212,6 +219,7 @@ svg text {
     stroke-dasharray: 0, 100;
     animation: draw 1s linear forwards;
     animation-delay: 4s;
+    animation-play-state: inherit; 
 }
 
 @keyframes delaydraw {
@@ -226,6 +234,7 @@ svg text {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
     animation: delaydraw 1s linear forwards;
     animation-delay: 4.5s;
+    animation-play-state: inherit; 
 }
 
 #innerpanel a {
@@ -236,6 +245,7 @@ svg text {
     text-decoration: none;
     animation: delaydraw 1s linear forwards;
     animation-delay: 5.5s;
+    animation-play-state: inherit; 
 }
 
 #innerpanel a:hover {

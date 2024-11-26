@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let playing = document.getElementById("playing");
         playing.style.display = "block";
 
-        // Make animation start
+        // Start animation sequence
+        playing.style.animationPlayState = "running";
     }
 });
