@@ -65,7 +65,7 @@ body {
     top: 0;
     left: 0;
     animation: space 20s alternate infinite;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
     animation-play-state: inherit; 
 }
 
@@ -90,7 +90,7 @@ body {
     top: -10vh;
     left: -10vw;
     animation: zoomout 2s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
     animation-play-state: inherit; 
 }
 
@@ -135,19 +135,19 @@ body {
 
 #doorleft {
     animation: leftdoor 2s forwards;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-play-state: inherit; 
 }
 
 #doorright {
     animation: rightdoor 2s forwards;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-play-state: inherit; 
 }
 
 #doorplane {
     animation: zoomin 3s forwards;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-play-state: inherit; 
 }
 
@@ -178,8 +178,8 @@ body {
     box-shadow: 0 0 20px rgba(0, 200, 0, .80);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    animation: screenoutput 2s forwards;
-    animation-delay: 3s;
+    animation: screenoutput 3s forwards;
+    animation-delay: 2s;
     animation-play-state: inherit; 
 }
 
@@ -218,7 +218,7 @@ svg text {
     stroke-width: 2;
     stroke-dasharray: 0, 100;
     animation: draw 1s linear forwards;
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-play-state: inherit; 
 }
 
@@ -233,7 +233,7 @@ svg text {
     color: rgba(70, 255, 70, 0);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
     animation: delaydraw 1s linear forwards;
-    animation-delay: 4.5s;
+    animation-delay: 3.5s;
     animation-play-state: inherit; 
 }
 
@@ -244,7 +244,7 @@ svg text {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
     text-decoration: none;
     animation: delaydraw 1s linear forwards;
-    animation-delay: 5.5s;
+    animation-delay: 4.5s;
     animation-play-state: inherit; 
 }
 
