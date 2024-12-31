@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#background {
+    color: white;
+    background-color: black;
+    background-image: url("../img/pexels-agnieszka-taggart-3157904-28343999.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: lightcoral;
+    text-align: center;
+    padding: 1em 0;
+    text-shadow: 2px 2px 5px black;
+}
+
+a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: lightblue;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    color: lightgray;
+}
