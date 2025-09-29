@@ -190,14 +190,29 @@ body {
     overflow: hidden;
 }
 
-.neon {
+.neon,
+.neon2 {
     color: rgba(70, 255, 70, .80);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-family: 'SpaceGrotesk';
+}
+
+.neon {
     font-size: 1.5rem;
 }
 
+.neon2 {
+    font-size: 1.1rem;
+}
+
 .neonhr {
+    border: 2px solid rgba(70, 255, 70, .80);
+    margin: 20px auto;
+}
+
+.neonhr2 {
+    margin: 20px auto;
+    width: 50%;
     border: 2px solid rgba(70, 255, 70, .80);
 }
 
@@ -239,13 +254,13 @@ svg text {
 
 #innerpanel a {
     font-family: 'SpaceGrotesk';
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgba(70, 255, 70, 0);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
     text-decoration: none;
     animation: delaydraw 1s linear forwards;
     animation-delay: 4.5s;
-    animation-play-state: inherit; 
+    animation-play-state: inherit;
 }
 
 #innerpanel a:hover {
