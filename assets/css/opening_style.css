@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -202,18 +203,17 @@ body {
 }
 
 .neon2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
-.neonhr {
+.neonhr,
+.neonhr2 {
     border: 2px solid rgba(70, 255, 70, .80);
     margin: 20px auto;
 }
 
 .neonhr2 {
-    margin: 20px auto;
     width: 50%;
-    border: 2px solid rgba(70, 255, 70, .80);
 }
 
 @keyframes draw {
@@ -244,17 +244,27 @@ svg text {
     }
 }
 
+#innerpanel {
+    padding: 1rem;
+}
+
 #innerpanel p {
     color: rgba(70, 255, 70, 0);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
     animation: delaydraw 1s linear forwards;
     animation-delay: 3.5s;
-    animation-play-state: inherit; 
+    animation-play-state: inherit;
+    padding-bottom: 0.5rem;
 }
 
 #innerpanel a {
+    display: inline-block;
     font-family: 'SpaceGrotesk';
     font-size: 1.5rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+    padding: 1rem 2rem;
+    border:2px solid rgb(70, 255, 70);
     color: rgba(70, 255, 70, 0);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
     text-decoration: none;
@@ -264,5 +274,6 @@ svg text {
 }
 
 #innerpanel a:hover {
+    cursor: pointer;
     font-weight: 800;
 }
