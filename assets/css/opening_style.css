@@ -206,10 +206,28 @@ body {
     font-size: 1.2rem;
 }
 
+@keyframes delaydraw_p {
+    100% {
+        color: rgba(70, 255, 70, 1);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);    
+    }
+}
+
+@keyframes delaydraw_hr {
+    100% {
+        color: rgba(70, 255, 70, 1);
+        border: 2px solid rgba(70, 255, 70, 0.8);
+    }
+}
+
 .neonhr,
 .neonhr2 {
-    border: 2px solid rgba(70, 255, 70, .80);
+    color: rgba(70, 255, 70, 0);
+    border: 2px solid rgba(70, 255, 70, 0);
     margin: 20px auto;
+    animation: delaydraw_hr 1s linear forwards;
+    animation-delay: 3.5s;
+    animation-play-state: inherit;
 }
 
 .neonhr2 {
@@ -237,10 +255,11 @@ svg text {
     animation-play-state: inherit; 
 }
 
-@keyframes delaydraw {
+@keyframes delaydraw_a {
     100% {
         color: rgba(70, 255, 70, 1);
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);    
+        border:2px solid rgb(70, 255, 70);
     }
 }
 
@@ -250,8 +269,8 @@ svg text {
 
 #innerpanel p {
     color: rgba(70, 255, 70, 0);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
-    animation: delaydraw 1s linear forwards;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+    animation: delaydraw_p 1s linear forwards;
     animation-delay: 3.5s;
     animation-play-state: inherit;
     padding-bottom: 0.5rem;
@@ -264,16 +283,15 @@ svg text {
     font-weight: 500;
     text-wrap: nowrap;
     padding: 1rem 2rem;
-    border:2px solid rgb(70, 255, 70);
+    border:2px solid rgba(70, 255, 0, 0);
     color: rgba(70, 255, 70, 0);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);    
     text-decoration: none;
-    animation: delaydraw 1s linear forwards;
+    animation: delaydraw_a 1s linear forwards;
     animation-delay: 4.5s;
     animation-play-state: inherit;
 }
 
 #innerpanel a:hover {
     cursor: pointer;
-    font-weight: 800;
+    text-shadow: 2px 2px 5px rgba(70, 255, 70, 0.5) !important;    
 }
