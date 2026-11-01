@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -54,8 +55,8 @@ a:hover {
 }
 
 #projectlist {
-    background-color: rgba(50,50,50,0.5);
-    backdrop-filter: blur(10px); 
+    background-color: rgba(50, 50, 50, 0.5);
+    backdrop-filter: blur(10px);
     width: 85vw;
     margin: 0 auto;
     padding: 1em;
@@ -67,11 +68,24 @@ a:hover {
     margin-top: 0.8em;
 }
 
+article {
+    margin-bottom: 0.5rem;
+}
+
 .listitem {
     font-size: 1.2em;
     font-weight: 500;
     color: lightgray;
     margin-bottom: 0.5em;
+}
+
+ul {
+    margin-left: 3rem;
+}
+
+li {
+    font-size: 1.2em;
+    color: lightgoldenrodyellow
 }
 
 .listitem::before {
@@ -89,7 +103,7 @@ a:hover {
     width: 60vw;
     padding: 0.8em;
     margin: 0 auto;
-    border: .2em solid rgba(40,40,40,.5);
+    border: .2em solid rgba(40, 40, 40, .5);
     border-radius: 0.8em;
     text-align: center;
     position: relative;
@@ -99,11 +113,11 @@ a:hover {
 
 #githublogo {
     position: relative;
-    width:5em;
+    width: 5em;
     top: .55em;
 }
 
 #githublogo:hover {
-    transform: scale(1.1) ;
+    transform: scale(1.1);
     filter: blur(1px);
 }
