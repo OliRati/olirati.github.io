@@ -7,6 +7,9 @@
 body {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #background {
@@ -69,7 +72,11 @@ a:hover {
 }
 
 article {
-    margin-bottom: 0.5rem;
+    border-radius: 2rem 0 2rem 0;
+    border: 3px solid rgba(150, 150, 150, 0.5);
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 1rem 1rem 1rem rgba(50, 50, 50, 0.5);
 }
 
 .listitem {
@@ -120,4 +127,9 @@ li {
 #githublogo:hover {
     transform: scale(1.1);
     filter: blur(1px);
+}
+
+footer {
+    text-align: right;
+    padding: 1rem;
 }
