@@ -12,6 +12,10 @@ body {
     justify-content: space-between;
 }
 
+/*
+ * Background image
+ */
+
 #background {
     background-image: url("../img/pexels-agnieszka-taggart-3157904-28343999.jpg");
     background-position: center;
@@ -23,13 +27,31 @@ body {
     z-index: -1;
 }
 
-.hero {
+/*
+ * Hero section style
+ */
+
+.hero-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
+.hero-background {
+    background-color: rgba(70, 70, 70, .5);
+    width: 85%;
+    padding: 0.8rem;
+    margin: 0 auto;
+    border: 2px solid rgba(40, 40, 40, .5);
+    border-radius: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+    top: 2rem;
+}
+
 .hero-title {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
     color: beige;
 }
@@ -37,25 +59,30 @@ body {
 .hero-subtitle {
     margin: 0;
     padding: 0;
+    color: beige;
 }
 
 .paragraph {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     color: lightgray
 }
 
+/*
+ * Article section style
+ */
+
 .paragraph::first-letter {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-right: 0.1em;
-    margin-left: 1em;
+    margin-right: 0.1rem;
+    margin-left: 1rem;
     color: white;
 }
 
 a {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 600;
     color: lightblue;
 }
@@ -69,43 +96,43 @@ a:hover {
     max-width: 1280px;
     margin: 1.5rem auto;
     width: 98vw;
-    padding: 1em;
+    padding: 1rem;
 }
 
 #project-list {
     background-color: rgba(50, 50, 50, 0.5);
     backdrop-filter: blur(10px);
-    border-radius: .8em;
+    border-radius: .8rem;
 }
 
 .list {
-    margin-left: 3em;
-    margin-top: 0.8em;
+    margin-top: 0.8rem;
+    margin-left: 0.5rem
 }
 
 article {
     border-radius: 2rem 0 2rem 0;
     border: 3px solid rgba(150, 150, 150, 0.5);
     padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 1rem 1rem 1rem rgba(50, 50, 50, 0.5);
+    margin: 2rem 0;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .project-title {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 500;
     color: lightgray;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
 
 .project-title::before {
     position: relative;
-    top: 0.2em;
+    top: 0.2rem;
     content: "*";
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 900;
     color: lightcoral;
-    margin-right: 0.25em;
+    margin-right: 0.25rem;
 }
 
 ul {
@@ -113,27 +140,14 @@ ul {
 }
 
 li {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: lightgoldenrodyellow
-}
-
-#maintitle {
-    background-color: rgba(70, 70, 70, .5);
-    width: 85%;
-    padding: 0.8em;
-    margin: 0 auto;
-    border: .2em solid rgba(40, 40, 40, .5);
-    border-radius: 0.8em;
-    text-align: center;
-    position: relative;
-    margin-bottom: 3em;
-    top: 2em;
 }
 
 #githublogo {
     position: relative;
-    width: 5em;
-    top: .55em;
+    width: 5rem;
+    top: .55rem;
 }
 
 #githublogo:hover {
@@ -153,7 +167,7 @@ footer {
         width: 95vw;
     }
 
-    #maintitle {
+    .hero-background {
         width: 80%;
     }
 }
@@ -165,7 +179,7 @@ footer {
         width: 90vw;
     }
 
-    #maintitle {
+    .hero-background {
         width: 64%;
     }
 }
@@ -177,7 +191,7 @@ footer {
         width: 100vw;
     }
 
-    #maintitle {
+    .hero-background {
         width: 60%;
-    }    
+    }
 }
