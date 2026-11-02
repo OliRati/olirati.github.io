@@ -23,13 +23,18 @@ body {
     z-index: -1;
 }
 
-.title {
+.hero {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero-title {
     font-size: 2em;
     font-weight: 600;
     color: beige;
 }
 
-.subtitle {
+.hero-subtitle {
     margin: 0;
     padding: 0;
 }
@@ -114,7 +119,7 @@ li {
 
 #maintitle {
     background-color: rgba(70, 70, 70, .5);
-    width: 60vw;
+    width: 85%;
     padding: 0.8em;
     margin: 0 auto;
     border: .2em solid rgba(40, 40, 40, .5);
@@ -142,22 +147,37 @@ footer {
 }
 
 @media screen and (min-width: 480px) {
+
     #project-list,
     #project-subtitle {
         width: 95vw;
     }
+
+    #maintitle {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+
     #project-list,
     #project-subtitle {
         width: 90vw;
     }
+
+    #maintitle {
+        width: 64%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
+
     #project-list,
     #project-subtitle {
         width: 100vw;
     }
+
+    #maintitle {
+        width: 60%;
+    }    
 }
