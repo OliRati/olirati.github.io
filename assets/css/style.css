@@ -86,11 +86,21 @@ article {
     box-shadow: 1rem 1rem 1rem rgba(50, 50, 50, 0.5);
 }
 
-.listitem {
+.project-title {
     font-size: 1.2em;
     font-weight: 500;
     color: lightgray;
     margin-bottom: 0.5em;
+}
+
+.project-title::before {
+    position: relative;
+    top: 0.2em;
+    content: "*";
+    font-size: 1.2em;
+    font-weight: 900;
+    color: lightcoral;
+    margin-right: 0.25em;
 }
 
 ul {
@@ -100,16 +110,6 @@ ul {
 li {
     font-size: 1.2em;
     color: lightgoldenrodyellow
-}
-
-.listitem::before {
-    position: relative;
-    top: 0.2em;
-    content: "*";
-    font-size: 1.2em;
-    font-weight: 900;
-    color: lightcoral;
-    margin-right: 0.25em;
 }
 
 #maintitle {
